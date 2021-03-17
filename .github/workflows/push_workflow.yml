@@ -24,6 +24,8 @@ jobs:
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
       - name: Install Composer Dependencies
         run: composer install 
+      - name: update Composer Dependencies
+        run: composer update 
       - name: Install NPM Dependencies
         run: npm install
       - name: Generate Key
